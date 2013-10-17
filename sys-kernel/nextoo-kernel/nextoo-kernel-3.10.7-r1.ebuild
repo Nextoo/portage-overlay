@@ -1,20 +1,26 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Copyright 2013 Aaron Ten Clay <aarontc@aarontc.com>
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/gentoo-sources/gentoo-sources-3.10.7-r1.ebuild,v 1.1 2013/09/25 17:40:46 tomwij Exp $
 
+# Common parts
 EAPI="5"
+KEYWORDS="amd64 x86"
+HOMEPAGE="http://www.nextoo.org/"
+DESCRIPTION="Binary Linux kernel build of Gentoo-patched sources from the ${KV_MAJOR}.${KV_MINOR} tree, as well as initramfs built using Genkernel"
+LICENSE="GPL-2"
+SLOT="0"
+RESTRICT=""
+
+# Kernel parts
 ETYPE="sources"
 K_GENPATCHES_VER="1"
 K_DEBLOB_AVAILABLE="0"
+
+
 inherit kernel-2
 detect_version
 detect_arch
 
-KEYWORDS="amd64 x86"
-HOMEPAGE="http://www.nextoo.org/"
-
-DESCRIPTION="Binary Linux kernel build of Gentoo-patched sources from the ${KV_MAJOR}.${KV_MINOR} tree"
 
 GENPATCH_PREFIX="genpatches-${PV}-${K_GENPATCHES_VER}"
 
@@ -27,6 +33,8 @@ SRC_URI="
 UNIPATCH_LIST="
 	${GENPATCH_PREFIX}.base.tar.xz
 	${GENPATCH_PREFIX}.extras.tar.xz"
+
+DEPEND="sys-kernel/genkernel[crypt,cryptsetup]"
 
 src_configure() {
 	cp "${FILESDIR}/config-${PVR}" .config
@@ -58,6 +66,12 @@ src_install() {
 	# Install bzimage
 	mkdir -p "${D}/boot"
 	INSTALLKERNEL=false emake INSTALL_PATH="${D}/boot" install
+
+	# Generate initramfs
+	mkdir -p "${WORKDIR}/genkernel"
+	mkdir -p "${T}/genkernel-temp"
+	mkdir -p "${T}/genkernel-cache"
+	genkernel  --logfile="${WORKDIR}/genkernel/genkernel.log" --kerneldir="${WORKDIR}/linux-${KV_FULL}" --kernel-config="${WORKDIR}/linux-${KV_FULL}/.config" --lvm --mdadm --dmraid --e2fsprogs --iscsi --disklabel --luks --gpg --unionfs --no-postclear --tempdir="${T}/genkernel-temp" --cachedir="${T}/genkernel-cache" --firmware --firmware-dir="${D}/lib/firmware" --compress-initramfs --compress-initramfs-type=best --makeopts="${MAKEOPTS}" --no-mountboot --bootdir="${D}/boot" initramfs
 
 	export ARCH="${old_arch}"
 }
