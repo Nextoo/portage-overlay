@@ -11,7 +11,7 @@ LICENSE="GPL-2"
 KEYWORDS="amd64 x86"
 
 RDEPEND="
-	nextoo-meta/nextoo-base
+	nextoo/nextoo-base
 
 	app-admin/logsentry
 
