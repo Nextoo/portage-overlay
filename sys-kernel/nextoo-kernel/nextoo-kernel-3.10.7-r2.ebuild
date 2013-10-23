@@ -19,7 +19,7 @@ HOMEPAGE="http://www.nextoo.org/"
 IUSE=""
 KEYWORDS="amd64 x86"
 LICENSE="GPL-2"
-RESTRICT=""
+RESTRICT="splitdebug"
 SLOT="0"
 
 
