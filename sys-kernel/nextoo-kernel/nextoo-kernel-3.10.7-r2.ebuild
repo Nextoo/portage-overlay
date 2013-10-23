@@ -4,22 +4,26 @@
 
 # Common parts
 EAPI="5"
-KEYWORDS="amd64 x86"
-HOMEPAGE="http://www.nextoo.org/"
-DESCRIPTION="Binary Linux kernel build of Gentoo-patched sources from the ${KV_MAJOR}.${KV_MINOR} tree, as well as initramfs built using Genkernel"
-LICENSE="GPL-2"
-SLOT="0"
-RESTRICT=""
 
 # Kernel parts
 ETYPE="sources"
 K_GENPATCHES_VER="1"
 K_DEBLOB_AVAILABLE="0"
-
-
 inherit kernel-2
 detect_version
 detect_arch
+
+# NexToo parts
+DESCRIPTION="Binary Linux kernel build of Gentoo-patched sources from the ${KV_MAJOR}.${KV_MINOR} tree, as well as initramfs built using Genkernel"
+HOMEPAGE="http://www.nextoo.org/"
+IUSE=""
+KEYWORDS="amd64 x86"
+LICENSE="GPL-2"
+RESTRICT=""
+SLOT="0"
+
+
+
 
 
 GENPATCH_PREFIX="genpatches-${PV}-${K_GENPATCHES_VER}"
