@@ -16,7 +16,8 @@ detect_arch
 # NexToo parts
 DESCRIPTION="Binary Linux kernel build of Gentoo-patched sources from the ${KV_MAJOR}.${KV_MINOR} tree, as well as initramfs built using Genkernel"
 HOMEPAGE="http://www.nextoo.org/"
-IUSE=""
+IUSE="${IUSE/build}"
+IUSE="${IUSE/symlink}"
 KEYWORDS="amd64 x86"
 LICENSE="GPL-2"
 RESTRICT="splitdebug"
