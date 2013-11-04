@@ -56,6 +56,11 @@ RDEPEND="${CDEPEND}
 
 STRIP_MASK="/usr/lib*/rados-classes/*"
 
+src_unpack() {
+	unpack ${A}
+	mv "${P//_/-}" "${P}"
+}
+
 src_prepare() {
 	if [ ! -z ${PATCHES[@]} ]; then
 		epatch ${PATCHES[@]}
