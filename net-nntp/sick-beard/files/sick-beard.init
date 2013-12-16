@@ -4,7 +4,8 @@
 # $Header: $
 
 depend() {
-        need net
+	need net
+	use nfsmount sabnzbd
 }
 
 run_dir="/var/run/sick-beard"
