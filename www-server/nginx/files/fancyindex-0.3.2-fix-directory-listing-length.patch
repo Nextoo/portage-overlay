@@ -1,0 +1,13 @@
+--- a/ngx_http_fancyindex_module.c      2013-12-26 21:51:10.121474393 -0800
++++ b/ngx_http_fancyindex_module.c      2013-12-26 21:51:20.821474541 -0800
+@@ -51,8 +51,8 @@
+ } ngx_http_fancyindex_loc_conf_t;
+
+
+-#define NGX_HTTP_FANCYINDEX_PREALLOCATE  50
+-#define NGX_HTTP_FANCYINDEX_NAME_LEN     50
++#define NGX_HTTP_FANCYINDEX_PREALLOCATE  250
++#define NGX_HTTP_FANCYINDEX_NAME_LEN     250
+
+
+ /**
