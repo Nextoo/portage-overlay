@@ -280,6 +280,12 @@ src_prepare() {
 		cd -
 	fi
 
+	if use nginx_modules_http_fancyindex; then
+		cd "${HTTP_FANCYINDEX_MODULE_WD}"
+		epatch "${FILESDIR}/fancyindex-0.3.2-fix-directory-listing-length.patch"
+		cd -
+	fi
+
 	find auto/ -type f -print0 | xargs -0 sed -i 's:\&\& make:\&\& \\$(MAKE):' || die
 	# We have config protection, don't rename etc files
 	sed -i 's:.default::' auto/install || die
@@ -293,12 +299,6 @@ src_prepare() {
 			sed -i -e "/${module}/d" auto/install || die
 		fi
 	done
-
-	if use nginx_modules_http_fancyindex; then
-		cd "${HTTP_FANCYINDEX_MODULE_WD}"
-		epatch "${FILESDIR}/fancyindex-0.3.2-fix-directory-listing-length.patch"
-		cd -
-	fi
 
 	epatch_user
 }
