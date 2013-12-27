@@ -367,7 +367,6 @@ src_configure() {
 	if use nginx_modules_http_fancyindex; then
 		http_enabled=1
 		myconf+=" --add-module=${HTTP_FANCYINDEX_MODULE_WD}"
-		epatch
 	fi
 
 	if use nginx_modules_http_lua; then
