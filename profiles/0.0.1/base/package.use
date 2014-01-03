@@ -1,0 +1,3 @@
+app-arch/p7zip wxwidgets
+net-fs/cifs-utils -acl
+net-libs/libproxy -webkit

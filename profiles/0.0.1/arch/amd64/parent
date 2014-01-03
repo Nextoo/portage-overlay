@@ -1,0 +1,2 @@
+# Pull in Gentoo's amd64 profile
+gentoo:default/linux/amd64/13.0

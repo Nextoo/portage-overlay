@@ -1,0 +1,9 @@
+# required by sys-devel/prelink-20130503
+# required by app-emulation/wine-1.7.4[prelink]
+# required by app-emulation/winetricks-20130707
+dev-libs/elfutils static-libs
+
+# required by media-sound/paprefs-0.9.10
+# required by @system
+# required by @world (argument)
+media-sound/pulseaudio gnome

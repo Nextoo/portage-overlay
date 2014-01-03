@@ -1,0 +1,2 @@
+# Pull in Gentoo's x86 profile
+gentoo:default/linux/x86/13.0

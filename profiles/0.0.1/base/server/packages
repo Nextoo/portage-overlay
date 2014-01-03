@@ -1,0 +1,14 @@
+*app-admin/logsentry
+
+*net-analyzer/fail2ban
+*net-analyzer/tcpdump
+*net-analyzer/zabbix
+
+*net-firewall/ebtables
+*net-firewall/ipset
+*net-firewall/shorewall
+*net-firewall/shorewall6
+
+*net-misc/bridge-utils
+
+*sys-block/tw_cli

@@ -1,5 +1,0 @@
-# Add nextoos base packages
-../../../../../base
-
-# Pull in all the USE flags and base packages from gentoos default profile
-gentoo:default/linux/amd64/13.0

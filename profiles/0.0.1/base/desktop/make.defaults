@@ -1,0 +1,14 @@
+USE="1stclassmsg X a52 aac aacs acpi alsa android apng atmo autoipd avahi
+     bitforce bluray btrfs c++0x cairo cdda cddb cgi cmake
+     consolekit cryptsetup cups dbus declarative dirac dot dts dvd encode fat
+     flac fontconfig gd gif gimp git gles gles1 gles2 glew gudev hfs hwdb icu
+     java jpeg jpeg2k kate kde kerberos libass libsamplerate mdadm
+     mdnsresponder-compat minizip mmx mng mp3 mtp multimedia musepack nfsv41
+     nsplugin ntfs ocr ogg okteta openal opengl pdf pdo perl png policykit
+     postgres postscript pulseaudio python qml qt3support qt4 qthelp rar rbd
+     rdesktop realtime reviewboard rtsp samba scanner script sdl sdl-image
+     semantic-desktop shine shout speech spell sql sqlite sse sse2 subversion
+     svg switcher taglib theora threads tiff tk tools tracker transcode
+     truetype udev upcall upnp upnp-av v4l vaapi valgrind vcdx vdpau vnc
+     vorbis webkit winbind x264 xcomposite xinerama xml xmp xosd xv zeroconf
+     -dso -libproxy -lxc -snappy -tor tcl"
