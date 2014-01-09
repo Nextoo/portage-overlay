@@ -3,11 +3,6 @@
 # required by @world (argument)
 virtual/mysql embedded
 
-# required by net-p2p/bitcoin-qt-0.8.5
-# required by @system
-# required by @world (argument)
-dev-libs/openssl -bindist
-
 # required by virtual/mysql-5.1
 # required by dev-qt/qtsql-4.8.5[mysql]
 # required by kde-base/kdialog-4.11.2
