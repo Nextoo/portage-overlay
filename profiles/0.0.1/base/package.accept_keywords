@@ -5,3 +5,8 @@
 =app-emulation/winetricks-20130707 ~amd64
 =net-im/skype-4.2.0.11-r1 ~amd64
 =media-sound/qtmpc-0.6.1 ~amd64
+=x11-libs/libdrm-2.4.46 libkms
+=media-libs/mesa-9.1.6 xa
+=dev-db/mysql-5.1.70 embedded
+=dev-libs/openssl-1.0.1e-r1 -bindist
+=virtual/mysql-5.1 embedded
