@@ -7,34 +7,3 @@ dev-libs/elfutils static-libs
 # required by @system
 # required by @world (argument)
 media-sound/pulseaudio gnome
-
-# required by media-sound/amarok-2.8.0
-# required by @system
-# required by @world (argument)
-virtual/mysql embedded
-
-# required by net-p2p/bitcoin-qt-0.8.5
-# required by @system
-# required by @world (argument)
-dev-libs/openssl -bindist
-
-# required by virtual/mysql-5.1
-# required by dev-qt/qtsql-4.8.5[mysql]
-# required by kde-base/kdialog-4.11.2
-# required by kde-base/kdebase-meta-4.11.2
-# required by kde-base/kde-meta-4.11.2-r1
-# required by @system
-# required by @world (argument)
-dev-db/mysql embedded
-
-# required by x11-drivers/xf86-video-vmware-13.0.1
-# required by x11-base/xorg-drivers-1.14[video_cards_vmware]
-# required by x11-base/xorg-server-1.14.3-r2[xorg]
-# required by x11-drivers/xf86-video-dummy-0.3.7
-media-libs/mesa xa
-
-# required by x11-drivers/xf86-video-vmware-13.0.1
-# required by x11-base/xorg-drivers-1.14[video_cards_vmware]
-# required by x11-base/xorg-server-1.14.3-r2[xorg]
-# required by x11-drivers/xf86-video-dummy-0.3.7
-x11-libs/libdrm libkms
