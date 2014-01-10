@@ -4,8 +4,10 @@ GENTOO_MIRRORS="http://gentoo.closest.myvwan.com/gentoo"
 SYNC="rsync://gentoo.closest.myvwan.com/gentoo-portage"
 MAKEOPTS="-j10"
 
-FEATURES="splitdebug"
+EMERGE_DEFAULT_OPTS="--quiet --jobs=1"
+FEATURES="getbinpkg splitdebug"
 
 PORTAGE_NICENESS="15"
 
-RUBY_TARGETS="ruby19 ruby20"
+RUBY_TARGETS="-ruby18 ruby19 ruby20"
+
