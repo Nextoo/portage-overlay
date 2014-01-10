@@ -1,3 +1,6 @@
 # required by media-gfx/graphviz-2.26.3-r4
 # required by net-analyzer/ntop-4.0.3
 media-libs/gd jpeg png truetype fontconfig
+
+# Disable modules for ipset by default because nextoo-kernel has CONFIG_IP_SET support already
+net-firewall/ipset -modules
