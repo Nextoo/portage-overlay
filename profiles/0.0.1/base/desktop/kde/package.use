@@ -23,8 +23,3 @@ media-libs/mesa xa
 # required by x11-base/xorg-server-1.14.3-r2[xorg]
 # required by x11-drivers/xf86-video-dummy-0.3.7
 x11-libs/libdrm libkms
-
-# Hopefull this will fix the following error...
-# * ERROR: sys-libs/libcap-ng-0.7.3::gentoo failed (setup phase):
-# *   dev-lang/python:3.2 is not installed
-sys-libs/libcap-ng -python
