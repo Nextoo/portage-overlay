@@ -9,6 +9,13 @@ dev-libs/elfutils static-libs
 media-sound/pulseaudio gnome
 
 # required to fix the following error
+# In file included from /usr/include/libpq-fe.h:29:0,
+#                  from sql.c:192:
+# /usr/include/postgres_ext.h:26:27: fatal error: pg_config_ext.h: No such file or directory
+# compilation terminated.
+dev-libs/cyrus-sasl -postgres
+
+# required to fix the following error
 # checking for gdImagePng in -lgd... no
 # checking for gdImageGif in -lgd... no
 # checking for gdImagePng in -lgd... no

@@ -23,10 +23,3 @@ media-libs/mesa xa
 # required by x11-base/xorg-server-1.14.3-r2[xorg]
 # required by x11-drivers/xf86-video-dummy-0.3.7
 x11-libs/libdrm libkms
-
-# required to fix the following error
-# In file included from /usr/include/libpq-fe.h:29:0,
-#                  from sql.c:192:
-# /usr/include/postgres_ext.h:26:27: fatal error: pg_config_ext.h: No such file or directory
-# compilation terminated.
-dev-libs/cyrus-sasl -postgres
