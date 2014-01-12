@@ -7,3 +7,14 @@ dev-libs/elfutils static-libs
 # required by @system
 # required by @world (argument)
 media-sound/pulseaudio gnome
+
+# required to fix the following error
+# checking for gdImagePng in -lgd... no
+# checking for gdImageGif in -lgd... no
+# checking for gdImagePng in -lgd... no
+# checking for gdImageGif in -lgd... no
+# configure: error: Your system lacks the GD library which is needed for
+#                          compiling the apcupsd CGI programs. Please install
+#                          libgd and re-run the ./configure script.
+#                          Alternatively you can disable the CGI support.
+sys-power/apcupsd -cgi
