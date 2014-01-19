@@ -1,7 +1,7 @@
-amd64			0.0.1/default/linux/amd64/desktop				stable
-amd64			0.0.1/default/linux/amd64/desktop/developer		stable
-amd64			0.0.1/default/linux/amd64/desktop/kde			stable
+amd64			default/linux/amd64/desktop				stable
+amd64			default/linux/amd64/desktop/developer	stable
+amd64			default/linux/amd64/desktop/kde			stable
 
-amd64			0.0.1/default/linux/amd64/server				stable
-amd64			0.0.1/default/linux/amd64/server/router			stable
+amd64			default/linux/amd64/server				stable
+amd64			default/linux/amd64/server/router		stable
 
