@@ -8,7 +8,7 @@ KEYWORDS="amd64 x86"
 HOMEPAGE="http://www.nextoo.org/"
 DESCRIPTION="Binary Linux kernel build of Gentoo-patched sources from the ${KV_MAJOR}.${KV_MINOR} tree, as well as initramfs built using Genkernel"
 LICENSE="GPL-2"
-SLOT="0"
+SLOT="3.10.7-r1"
 RESTRICT=""
 
 # Kernel parts

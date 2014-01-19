@@ -21,7 +21,7 @@ IUSE="${IUSE/symlink}"
 KEYWORDS="amd64 x86"
 LICENSE="GPL-2"
 RESTRICT="splitdebug"
-SLOT="0"
+SLOT="3.10.7-r4"
 
 
 
