@@ -74,7 +74,7 @@
 *sys-process/atop
 *sys-process/htop
 *sys-process/lsof
-*sys-process/vixie-cron
+*sys-process/cronie
 
 *www-client/links
 
