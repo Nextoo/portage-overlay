@@ -25,3 +25,10 @@ dev-libs/cyrus-sasl -postgres
 #                          libgd and re-run the ./configure script.
 #                          Alternatively you can disable the CGI support.
 sys-power/apcupsd -cgi
+
+
+#!!! The ebuild selected to satisfy ">=net-libs/webkit-gtk-1.6.1:2" has unmet requirements.
+#  The following REQUIRED_USE flag constraints are unsatisfied:
+#    webgl? ( exactly-one-of ( gles2 opengl ) )
+net-libs/webkit-gtk -opengl
+
