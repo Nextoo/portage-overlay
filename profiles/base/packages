@@ -70,8 +70,8 @@
 *sys-fs/ntfs3g
 *sys-fs/xfsprogs
 
-*sys-kernel/nextoo-kernel
-
+# Kernel ebuild is broken and too much to bite off for now.
+#*sys-kernel/nextoo-kernel
 
 
 *sys-process/atop
