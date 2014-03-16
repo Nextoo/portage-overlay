@@ -43,7 +43,7 @@
 
 *sys-block/gparted
 
-*www-client/firefox
+*www-client/firefox-bin
 *www-client/google-chrome
 *www-client/opera
 *www-plugins/adobe-flash
