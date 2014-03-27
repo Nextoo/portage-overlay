@@ -33,8 +33,15 @@
 
 *net-irc/konversation
 
+*net-mail/offlineimap
+
 *net-misc/dropbox
+*net-misc/owncloud-client
+*net-misc/teamviewer
 *net-misc/tightvnc
+*net-misc/x11-ssh-askpass
+
+*net-p2p/bitcoin-qt
 
 *net-print/hplip
 *net-print/xerox-drivers
@@ -50,10 +57,14 @@
 *www-plugins/google-talkplugin
 
 *x11-apps/mesa-progs
-*x11-base/xorg-server
+
+*x11-base/xorg-x11
 *x11-drivers/nvidia-drivers
+
 *x11-misc/synergy
 *x11-misc/x11vnc
+
 *x11-terms/eterm
 *x11-terms/xterm
+
 *x11-wm/fluxbox

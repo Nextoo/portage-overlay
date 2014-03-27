@@ -25,3 +25,31 @@ dev-libs/cyrus-sasl -postgres
 #                          libgd and re-run the ./configure script.
 #                          Alternatively you can disable the CGI support.
 sys-power/apcupsd -cgi
+
+
+# required by x11-drivers/xf86-video-vmware-13.0.1
+# required by x11-base/xorg-drivers-1.14[video_cards_vmware]
+# required by x11-base/xorg-server-1.14.3-r2[xorg]
+# required by x11-drivers/xf86-video-dummy-0.3.7
+media-libs/mesa xa
+
+# required by x11-drivers/xf86-video-vmware-13.0.1
+# required by x11-base/xorg-drivers-1.14[video_cards_vmware]
+# required by x11-base/xorg-server-1.14.3-r2[xorg]
+# required by x11-drivers/xf86-video-dummy-0.3.7
+x11-libs/libdrm libkms
+
+#- net-libs/webkit-gtk-2.2.4-r200::gentoo USE="egl geoloc gles2 gstreamer introspection jit opengl spell webgl (-aqua) -coverage -debug -libsecret -test"
+#
+#  The following REQUIRED_USE flag constraints are unsatisfied:
+#    webgl? ( exactly-one-of ( gles2 opengl ) )
+#
+#  The above constraints are a subset of the following complete expression:
+#    geoloc? ( introspection ) introspection? ( gstreamer ) gles2? ( egl ) webgl? ( exactly-one-of ( gles2 opengl ) ) !webgl? ( at-most-one-of ( gles2 opengl ) )
+#
+#(dependency required by "media-gfx/gimp-2.8.10-r1[webkit]" [installed])
+#(dependency required by "@selected" [set])
+#(dependency required by "@world" [argument])
+net-libs/webkit-gtk -opengl
+
+cool-something/whatever -NO

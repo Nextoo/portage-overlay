@@ -41,6 +41,8 @@
 *dev-vcs/mercurial
 *dev-vcs/qgit
 
+*media-gfx/graphviz
+
 *net-analyzer/wireshark
 
 *net-dialup/minicom

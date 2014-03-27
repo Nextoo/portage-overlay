@@ -4,7 +4,10 @@
 
 *app-arch/pbzip2
 
+*app-backup/duplicity
 *app-backup/rdiff-backup
+
+*app-benchmarks/bonnie++
 
 *app-editors/nano
 
@@ -24,9 +27,11 @@
 
 *mail-client/nail
 
+*media-sound/mumble
 
 *net-analyzer/iptraf-ng
 *net-analyzer/mtr
+*net-analyzer/namebench
 *net-analyzer/nethogs
 *net-analyzer/nmap
 *net-analyzer/traceroute
@@ -43,6 +48,7 @@
 *net-misc/ntp
 *net-misc/openssh
 *net-misc/openvpn
+*net-misc/pssh
 *net-misc/telnet-bsd
 
 *sys-apps/hdparm
@@ -72,10 +78,9 @@
 
 *sys-kernel/nextoo-kernel
 
-
-
 *sys-process/atop
 *sys-process/htop
+*sys-process/latencytop
 *sys-process/lsof
 *sys-process/cronie
 

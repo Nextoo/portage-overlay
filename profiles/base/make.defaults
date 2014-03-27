@@ -1,4 +1,4 @@
-USE="bash-completion btrfs c++0x consolekit cryptsetup dbus fat gudev hfs hwdb icu mdadm mdnsresponder-compat minizip mmx nfsv41 ntfs pdo policykit python rar rbd realtime sasl script sse sse2 tools udev"
+USE="bash-completion btrfs c++0x consolekit cryptsetup dbus fat gudev hfs hwdb icu mdadm mdnsresponder-compat minizip mmx nfsv41 ntfs pdo policykit python rar rbd realtime sasl script sse sse2 tools udev tty-helpers"
 
 GENTOO_MIRRORS="http://gentoo.closest.myvwan.com/gentoo"
 SYNC="rsync://gentoo.closest.myvwan.com/gentoo-portage"
@@ -9,5 +9,5 @@ FEATURES="getbinpkg splitdebug"
 
 PORTAGE_NICENESS="15"
 
-RUBY_TARGETS="ruby19 ruby20"
+RUBY_TARGETS="ruby21"
 

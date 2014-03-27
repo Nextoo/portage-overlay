@@ -1,0 +1,11 @@
+#!!! The ebuild selected to satisfy "net-analyzer/wireshark" has unmet requirements.
+#- net-analyzer/wireshark-1.10.5::gentoo USE="caps crypt filecaps gtk2 ipv6 kerberos netlink pcap qt4 ssl zlib -adns -doc -doc-pdf -geoip -gtk3 -libadns -lua -portaudio (-selinux) -smi"
+#
+#  The following REQUIRED_USE flag constraints are unsatisfied:
+#    at-most-one-of ( gtk2 gtk3 qt4 )
+#
+#  The above constraints are a subset of the following complete expression:
+#    at-most-one-of ( gtk2 gtk3 qt4 ) ssl? ( crypt )
+#
+#(dependency required by "@system" [set])
+net-analyzer/wireshark -qt4

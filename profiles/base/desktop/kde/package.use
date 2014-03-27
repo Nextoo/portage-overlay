@@ -11,15 +11,3 @@ virtual/mysql embedded
 # required by @system
 # required by @world (argument)
 dev-db/mysql embedded
-
-# required by x11-drivers/xf86-video-vmware-13.0.1
-# required by x11-base/xorg-drivers-1.14[video_cards_vmware]
-# required by x11-base/xorg-server-1.14.3-r2[xorg]
-# required by x11-drivers/xf86-video-dummy-0.3.7
-media-libs/mesa xa
-
-# required by x11-drivers/xf86-video-vmware-13.0.1
-# required by x11-base/xorg-drivers-1.14[video_cards_vmware]
-# required by x11-base/xorg-server-1.14.3-r2[xorg]
-# required by x11-drivers/xf86-video-dummy-0.3.7
-x11-libs/libdrm libkms
