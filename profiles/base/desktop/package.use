@@ -32,3 +32,5 @@ sys-power/apcupsd -cgi
 #    webgl? ( exactly-one-of ( gles2 opengl ) )
 net-libs/webkit-gtk -opengl
 
+# The following use flage is required by x11-drivers/xf86-video-mga-1.6.3
+media-libs/mesa gbm
