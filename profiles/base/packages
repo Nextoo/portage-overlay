@@ -4,7 +4,7 @@
 
 *app-arch/pbzip2
 
-*app-backup/rdiff-backup
+*app-backup/duplicity
 
 *app-editors/nano
 
