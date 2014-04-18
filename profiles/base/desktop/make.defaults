@@ -11,4 +11,4 @@ USE="1stclassmsg X a52 aac aacs acpi alsa android apng atmo autoipd avahi
      svg switcher taglib theora threads tiff tk tools tracker transcode
      truetype udev upcall upnp upnp-av v4l vaapi valgrind vcdx vdpau vnc
      vorbis webkit winbind x264 xcomposite xinerama xml xmp xosd xv zeroconf
-     -dso -libproxy -lxc -snappy -tor tcl"
+     -dso -libproxy -lxc -snappy -tor tcl xa mysql libkms"
