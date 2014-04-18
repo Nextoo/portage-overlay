@@ -1,0 +1,2 @@
+# Disable modules for ipset by default because nextoo-kernel has CONFIG_IP_SET support already
+net-firewall/ipset -modules
