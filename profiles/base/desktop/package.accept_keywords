@@ -7,3 +7,7 @@ www-plugins/google-talkplugin ~amd64 ~x86
 
 # Dependency of net-im/pidgin
 net-libs/gupnp-igd ~amd64
+
+# Dependency of app-office/libreoffice-4.1.4.2
+=dev-util/boost-build-1.53.0
+=dev-libs/boost-1.53.0-r1
