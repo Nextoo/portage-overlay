@@ -32,5 +32,12 @@ sys-power/apcupsd -cgi
 #    webgl? ( exactly-one-of ( gles2 opengl ) )
 net-libs/webkit-gtk -opengl
 
-# The following use flage is required by x11-drivers/xf86-video-mga-1.6.3
+# The following use flag is required by x11-drivers/xf86-video-mga-1.6.3
 media-libs/mesa gbm
+
+
+# required by sys-power/apcupsd-3.14.10-r6
+# required by virtual/ups-monitoring-agent-0.0.1::nextoo
+# required by @system
+# required by @world (argument)
+sys-apps/util-linux tty-helpers
