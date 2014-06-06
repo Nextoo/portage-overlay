@@ -16,7 +16,7 @@ HOMEPAGE="https://github.com/RuudBurger/CouchPotatoServer#readme"
 
 LICENSE="GPL-2" # only
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 pkg_setup() {
