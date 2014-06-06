@@ -5,3 +5,12 @@ amd64			default/linux/amd64/desktop/kde			stable
 amd64			default/linux/amd64/server				stable
 amd64			default/linux/amd64/server/router		stable
 
+
+
+x86				default/linux/x86/desktop				stable
+x86				default/linux/x86/desktop/developer		stable
+x86				default/linux/x86/desktop/kde			stable
+
+x86				default/linux/x86/server				stable
+x86				default/linux/x86/server/router			stable
+
