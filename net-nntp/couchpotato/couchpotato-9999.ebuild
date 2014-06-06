@@ -1,14 +1,15 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="5"
+EAPI=4
 
-PYTHON_COMPAT=(python2_6 python2_7)
+PYTHON_DEPEND="2:2.6"
+PYTHON_USE_WITH="sqlite"
 
 EGIT_REPO_URI="https://github.com/RuudBurger/CouchPotatoServer.git"
 
-inherit eutils user git-2 python-r1
+inherit eutils user git-2 python
 
 DESCRIPTION="CouchPotatoServer (CPS) V2 is an automatic NZB and torrent downloader for movies"
 HOMEPAGE="https://github.com/RuudBurger/CouchPotatoServer#readme"
@@ -19,6 +20,10 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 pkg_setup() {
+	# Control PYTHON_USE_WITH
+	python_set_active_version 2
+	python_pkg_setup
+
 	# Create couchpotato group
 	enewgroup ${PN}
 	# Create couchpotato user, put in couchpotato group
