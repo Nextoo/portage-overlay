@@ -53,6 +53,7 @@
 *sys-apps/setserial
 *sys-apps/smartmontools
 *sys-apps/usbutils
+*sys-apps/util-linux
 
 *sys-auth/nss-mdns
 
