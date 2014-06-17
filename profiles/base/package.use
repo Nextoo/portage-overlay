@@ -2,3 +2,6 @@ app-arch/p7zip wxwidgets
 net-fs/cifs-utils -acl
 net-libs/libproxy -webkit
 sys-apps/util-linux tty-helpers
+
+# Breaks circular dependency for curl and openldap
+net-misc/curl -ldap
